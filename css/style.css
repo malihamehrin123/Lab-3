@@ -52,7 +52,7 @@
         grid-template-columns: 220px 1fr;
         grid-template-areas: 
                "hd hd"
-               "nv mn "
+               "nv mn"
                "ft ft";
     }
     
@@ -60,8 +60,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .card: first-child {
+    .card:first-child {
         grid-column: 1 / 3;
     }
-
 }

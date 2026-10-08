@@ -12,16 +12,56 @@
 
 .header {
     grid-area: hd;
+    background-color: rgb(112, 162, 164);
+    padding: 20px;
+    text-align: center;
 }
 
 .nav {
     grid-area: nv;
+    background-color: rgb(222, 215, 135);
+    padding: 20px;
 }
 
 .main {
     grid-area: mn;
+    background-color:rgb(143, 191, 240);
+    padding: 20px;
 }
 
-.main {
+.footer {
     grid-area: ft;
+    background-color: rgb(112, 162, 164) ;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.card {
+     border: 1px solid black;
+     padding: 20px;
+     background-color: rgb(218, 192, 243);
+}
+
+@media (min-width: 768px) {
+    .page-layout {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas: 
+               "hd hd"
+               "nv mn "
+               "ft ft";
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card: first-child {
+        grid-column: 1 / 3;
+    }
+
 }

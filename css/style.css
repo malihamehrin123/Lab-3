@@ -1,1 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.page-layout {
+    display: grid;
+    grid-template-areas: "hd" "nv" "mn" "ft" ;
+    gap: 10px;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.nav {
+    grid-area: nv;
+}
+
+.main {
+    grid-area: mn;
+}
+
+.main {
+    grid-area: ft;
+}
